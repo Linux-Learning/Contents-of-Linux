@@ -7,4 +7,4 @@
 
 
 
-[shortcut]: ./Linux-basic/Linux-Command-Line-Shortcut-Key/Linux-command-line-shortcut-Key.md
+[shortcut]: ./Linux-basic/Linux-Command-Line-Shortcut-Key/Linux-command-line-shortcut-key.md
