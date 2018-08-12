@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Linux-command-line-shortcut-key</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><strong>Linux 命令行快捷键大全</strong></p>
+<p><strong>常用的快捷键:</strong></p>
+<p>Tab键 --命令、文件名等自动补全功能。</p>
+<p>Ctrl + c --取消当前行输入的命令，相当于Ctrl + Break。</p>
+<p>Ctrl + z --后端运行。</p>
+<p>Ctrl + l --清屏，相当于执行clear命令。</p>
+<p>Ctrl + s --暂停当前终端。</p>
+<p>Ctrl + q --恢复当前终端。</p>
+<p>Ctrl + a --光标移动到行首（Ahead of line），即Home键。</p>
+<p>Ctrl + e --光标移动到行尾（End of line），即End键。</p>
+<p>Alt + f --光标向前（Forward）移动到下一个单词。</p>
+<p>Alt + b --光标往回（Backward）移动到前一个单词。</p>
+<p>Ctrl + u --删除行首至光标之左字符的所有字符。</p>
+<p>Ctrl + k --删除光标至行尾的所有字符。</p>
+<p>Ctrl + w --截除光标左字符至此单词首的所有字符，否则截除光标前任意个空格和一个单词。</p>
+<p>Alt + d --截除光标至此单词尾的所有字符，否则截除光标后任意个空格和一个单词。</p>
+<p>Ctrl + y --复制你上一次删除或剪切的条目。</p>
+<p>Alt + u --转换光标至此单词尾的字母为大写，否则将其后的一个单词转换为大写。</p>
+<p>Alt + l --转换光标至此单词尾的字母为小写，否则将其后的一个单词转换为小写。</p>
+<p>Ctrl + t --光标处在行尾，则交换前两个字符的位置；否则交换光标处字符与前一字符位置，并且光标向右移动单个字符位置。</p>
+<p>Alt + t --依据光标所在位置，交换其所处单词和前一个单词的位置；交换其前后两个单词的位置；交换其前最后两个单词的位置（单词间空格注意空格位置的变化）。</p>
+<p>Alt + <strong>.</strong> --在光标处输出上一条命令的最后一个字符串，如上一条命令只有单个字符串，则调用此字符串。持续使用则在光标处依序切换为更前一条命令的字符串。</p>
+<p>^abc --删除上一条命令中对abc字符串的首个匹配，并执行。</p>
+<p>^foo^bar --将上一条命令中的 foo 字符串替换为 bar，并执行。</p>
+<p>Ctrl + - --依次撤销命令行除添加字符的首次修改及其后的所有修改，否则恢复到空行。等同Ctrl + x + u。</p>
+<p>Ctrl + r –依据用户在：提示符后的输入查找相关历史命令条目（reverse-i-search）。</p>
+<p>Ctrl + g --从历史搜索模式（Ctrl + r）退出。</p>
+<p>!! --执行上一条命令条目。</p>
+<p>!num --执行history记录中第num条命令条目，num正整数时，为正序；负数时，为反序。</p>
+<p>!*:p --输出上一条命令条目的所有参数。</p>
+<p>!num:p --输出第num条命令条目。</p>
+<p>!string:p --输出最近的以string开头的命令条目。等同!?string?。</p>
+<p>!num:gs/str1/str2/ --将第num条命令条目中匹配str1的替换为str2，并执行（若不加g，则仅替换第一个匹配）。</p>
+<p><strong>Bang(!)命令</strong></p>
+<p>!! --执行上一条命令。</p>
+<p>!num --执行history记录中第num条命令条目，num正整数时，为正序；负数时，为反序。</p>
+<p>!num:p --输出第num条命令条目，不执行。</p>
+<p>!num:gs/str1/str2/ --将第num条命令条目中匹配str1的替换为str2，并执行（若不加g，则仅替换第一个匹配）。</p>
+<p>!string --输出最近的以string开头的命令条目。等同!?string?。</p>
+<p>!?string? --输出最近的以string开头的命令条目。等同!string。</p>
+<p>!string:p --输出最近的以string开头的命令条目。</p>
+<p>^abc --删除上一条命令中对abc字符串的首个匹配，并执行。</p>
+<p>^foo^bar --将上一条命令中的 foo 字符串替换为 bar，并执行。</p>
+<p>!$ --执行上一条命令的最后一个参数。</p>
+<p>!* --执行上一条命令的所有参数。</p>
+<p>!*:p --输出上一条命令的所有参数。</p>
+<p><strong>移动光标</strong></p>
+<p>Ctrl + a --光标移动到行首（Ahead of line），即Home键。</p>
+<p>Ctrl + e --光标移动到行尾（End of line），即End键。</p>
+<p>Ctrl + xx --光标在行首与行尾之间切换移动。</p>
+<p>Ctrl + f --光标向前（Forward）/右移动一个字符位置。</p>
+<p>Ctrl + b --光标往回（Backward）/左移动一个字符位置。</p>
+<p>Alt + f --光标向前（Forward）移动到下一个单词。</p>
+<p>Alt + b --光标往回（Backward）移动到前一个单词。</p>
+<p><strong>编辑命令</strong></p>
+<p>Tab键 --命令、文件名等自动补全功能。</p>
+<p>Ctrl + d --删除一个字符，即Delete键(命令行若无字符，相当于exit，处理多行标准输入时也表示EOF)。</p>
+<p>Ctrl + h --退格删除一个字符，即Backspace键。</p>
+<p>Ctrl + u --删除行首至光标之左字符的所有字符。</p>
+<p>Ctrl + k --删除光标至行尾的所有字符。</p>
+<p>Ctrl + w --截除光标左字符至此单词首的所有字符，否则截除光标前任意个空格和一个单词。</p>
+<p>Alt + d --截除光标至此单词尾的所有字符，否则截除光标后任意个空格和一个单词。</p>
+<p>Ctrl + y --复制你上一次删除或或剪切的条目。</p>
+<p>Ctrl + t --光标处在行尾，则交换前两个字符的位置；否则交换光标处字符与前一字符位置，并且光标向右移动单个字符位置。</p>
+<p>Alt + t --依据光标所在位置，交换其所处单词和前一个单词的位置；交换其前后两个单词的位置；交换其前最后两个单词的位置（注意空格位置的变化）。</p>
+<p>Alt + u --转换光标至此单词尾的字母为大写，否则将其后的一个单词转换为大写。</p>
+<p>Alt + l --转换光标至此单词尾的字母为小写，否则将其后的一个单词转换为小写。</p>
+<p>Alt + <strong>.</strong> --在光标处输出上一条命令的最后一个字符串，如上一条命令只有单个字符串，则调用此字符串。持续使用则在光标处依序切换为更前一条命令的字符串。</p>
+<p>Ctrl + - --依次撤销命令行除添加字符的首次修改及其后的所有修改，否则恢复到空行。等同Ctrl + x + u。</p>
+<p>Ctrl + x + u --按住Ctrl的同时再先后按x和u，依次撤销命令行除添加字符的首次修改及其后的所有修改，否则恢复到空行。等同Ctrl + -。</p>
+<p><strong>查找历史命令</strong></p>
+<p>Ctrl + p --调出命令历史中的前一条（Previous）命令，即向上箭头键↑。</p>
+<p>Ctrl + n --调出命令历史中的下一条（Next）命令，即向下箭头键↓。</p>
+<p>Ctrl + r –依据用户在：提示符后的输入查找相关历史命令条目（reverse-i-search）。</p>
+<p>Ctrl + g --从历史搜索模式（Ctrl + r）退出。</p>
+<p><strong>控制命令</strong></p>
+<p>Ctrl + c --取消当前行输入的命令，相当于Ctrl + Break。</p>
+<p>Ctrl + s --暂停当前终端。</p>
+<p>Ctrl + q --恢复当前终端。</p>
+<p>Ctrl + z --后端运行。</p>
+<p>Ctrl + l --清空屏幕并重新显示当前命令行内容。</p>
+<p>[Ctrl] + [Alt] + [Delete] --关机并重新引导系统。在正常关机步骤不起作用时，可使用此方式。</p>
+<p>[Ctrl] + [Alt] + [Fn] / [Alt] + [Fn] --切换虚拟终端。默认， [F1]至[F6] 是命令行终端， [F7] 是X终端。</p>
+<p>[Alt] + [Tab] --在图形化桌面环境中切换任务。</p>
+<p>[Ctrl] + [Alt] + [Backspace] --杀死你当前的X会话，返回到登录会话。如果正常退出步骤不起作用，你可以使用这种方法。</p>
+<p><strong>其它快捷键</strong></p>
+<p>Esc键 --连续按3次显示所有的支持的终端命令。 </p>
+<p>Esc + b --移动到当前单词的开头</p>
+<p>Esc + f --移动到当前单词的结尾</p>
+<p>Esc + t --颠倒光标所在处及其相邻单词的位置</p>
+<p>Esc + d --由光标位置开始，删除单词，直到单词结束，往右侧（还有剪切功能）</p>
+<p>Esc + c --使下一个单词首字母大写, 同时光标前进一个单词, 如光标停留在单词的某个字母上, 如word中的o字母上, 则o字母变大写. 而不是w </p>
+<p>Esc + u --使下一个单词所有字母变大写, 同时光标前进一个单词, 同上, 如光标在o字母上, 则ord变大写, w不变. </p>
+<p>Esc+.  --上一个命令的后面的参数</p>
+<p>Esc + 操作次数 操作动作 --指定操作次数，重复执行指定的操作。</p>
+<p>Ctrl + V --输入控制字符 如Ctrl+v ,会输入^M</p>
+<p>Ctrl + [ --相当于Esc键。 </p>
+<p>Ctrl + i --相当于Tab键。 </p>
+<p>Ctrl + j --相当 enter / return 键</p>
+<p>Ctrl + m --相当 enter / return 键</p>
+<p>Ctrl + o --相当于Ctrl+m，但执行后会重复显示此命令行。</p>
+</body>
+</html>
